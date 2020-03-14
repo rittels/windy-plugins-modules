@@ -16,6 +16,6 @@ It has the following methods:
 - showRightDiv()
 - hideRightDiv()
 
-
+pickerTools on npm:  https://www.npmjs.com/package/windyplugin-module-pickertools
 
   
