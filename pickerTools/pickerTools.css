@@ -1,0 +1,51 @@
+.picker-div-text {
+    white-space: nowrap;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 1.1;
+}
+#picker-div-left {
+    right: 2px;
+    white-space: nowrap;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 1.1;
+}
+#picker-div-left span {
+    padding: 0px;
+}
+#picker-div-left.picker-div-desk {
+    background-color: transparent;
+    border-radius: 8px 0px 0px 8px;
+    margin-right: 1px;
+}
+#picker-div-left.picker-div-mobl {
+    right: 5px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+#picker-div-right {
+    left: 4px;
+    white-space: nowrap;
+    padding: 4px;
+    font-size: 10px;
+    line-height: 1.1;
+}
+#picker-div-right span {
+    padding: 0px;
+}
+#picker-div-right.picker-div-desk {
+    padding-right: 20px;
+}
+#picker-div-right.picker-div-mobl {
+    position: absolute;
+    left: 5px;
+    border-radius: 4px;
+    background-color: rgba(68,65,65,0.84);
+}
+.picker-anchor-mobl {
+    position: absolute;
+    margin-top: -67px;
+    width: 0px;
+    left: 1px;
+}

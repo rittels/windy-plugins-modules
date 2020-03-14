@@ -1,0 +1,16 @@
+{
+  "name": "windyplugin-module-pickertools",
+  "version": "0.0.95",
+  "description": "common module for adding stuff to the picker,  loaded as dependency",
+  "main": "dist/pickerTools.js",
+  "scripts": {
+    "start": "node ./compiler.js --build --watch --prompt --serve --transpile",
+    "mod":  "node ./compiler.js --prepmodule"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rittels/windy-plugins/tree/master/_plugins"
+  },
+  "author": "rittels",
+  "license": "MIT"
+}
