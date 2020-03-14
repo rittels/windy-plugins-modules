@@ -1,0 +1,16 @@
+{
+  "name": "windyplugin-module-plugin-coordinator",
+  "version": "0.0.61",
+  "description": "common module for coordinating plugins",
+  "main": "dist/pluginCoordinator.js",
+  "scripts": {
+    "start": "node ./compiler.js --build --watch --prompt --serve --transpile",
+    "mod":  "node ./compiler.js --prepmodule"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rittels/windy-plugins/tree/master/external-modules/pluginCoordinator"
+  },
+  "author": "rittels",
+  "license": "MIT"
+}
