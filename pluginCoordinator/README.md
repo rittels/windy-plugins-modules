@@ -6,7 +6,7 @@ pluginCoordinator module
 - For a the last opened windy-plugin (plugin that has focus):   Sets lastOpened property of the opened windy-plugin to true,  all the others to false,  this allows switching off listeners in the inactive plugins.  (Especially the weather picker).
 - Also for the plugin that looses focus (was lastOpened):
     - Sets the lastOpened property to false.
-	- Calls the onOtherPluginOpened(  W.plugin.plugin_that_is_being_opened.ident  ) method if it exists.
+	- Calls the onOtherPluginOpened( the ident of the plugin being opened is sent as parameter  ) method if it exists, in all the plugins that are not lastOpened.  The lastOpened property is set to false *after* this function is called.
 	- Closes the plugin.
 	- Sets the infobox div style to "none", if it exists.  (W.plugins.windy-plugin-xxx.refs.infobox)  I created this box to open the left pane,  or add info.  I use it in most of my plugins.
 	- Clears the weather picker content.

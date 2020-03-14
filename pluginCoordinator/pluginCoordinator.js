@@ -5,7 +5,7 @@ if(!W['windy-plugin-module-pluginCoordinator']) {
         'windy-plugin-module-pluginCoordinator',
         [],
         function () {
-            let  pluginVersion='0.0.61';
+            let  pluginVersion='0.0.63';
 
             let pluginCoordinator={
                 description:
@@ -17,8 +17,9 @@ if(!W['windy-plugin-module-pluginCoordinator']) {
                         if (W.rootScope.isMobile || W.rootScope.isTablet) document.getElementById("plugin-plugins").style.zIndex=1000;
                         let c=pluginsDiv.firstElementChild.children;
                         for(let i=2;i<c.length;i++){
-                            let linkNode=c[i].children[1].children[2].firstElementChild;
+                            let linkNode=c[i].querySelector("a[href*='windy-plugin']");
                             let hr=linkNode.href;
+                            console.log(hr);
                             let pluginName=hr.slice(hr.lastIndexOf("/")+1);
                             if (loadedPlugin==pluginName || (!loadedPlugin && W.plugins.hasOwnProperty(pluginName))){//if loadedPlugin not defined, then check each W.plugins
                                 let but1=linkNode.nextElementSibling;
@@ -83,8 +84,8 @@ if(!W['windy-plugin-module-pluginCoordinator']) {
                     let pluginsAvail=Object.keys(W.plugins).filter(e2=>e2.indexOf("windy-plugin")>=0);
                     pluginsAvail.forEach(p=>{
                         if (p!=e){
-                            if(W.plugins[p].lastOpened){
-                                if (W.plugins[p].onOtherPluginOpened) W.plugins[p].onOtherPluginOpened(e);
+                            if (W.plugins[p].onOtherPluginOpened) W.plugins[p].onOtherPluginOpened(e);
+                            if (W.plugins[p].lastOpened){
                                 if (W.plugins[p].isOpen) W.plugins[p].close();
                                 if (W.plugins[p].refs.infobox) W.plugins[p].refs.infobox.style.display="none";
                                 if (W['windy-plugin-module-pickerTools'])  W['windy-plugin-module-pickerTools'].removeElements();
