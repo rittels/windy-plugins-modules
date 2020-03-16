@@ -1,0 +1,52 @@
+.airspace-list {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    width: 100%;
+    background-color: transparent !important;
+    border-style: solid !important;
+    border-width: 0.75px 0px !important;
+    border-color: rgba(128, 128, 128, 0.5) !important;
+    border-radius: 0px !important;
+    color: inherit !important;
+}
+.airspace-div {
+    margin: 1px;
+    border: 0px;
+    font-size: 13px;
+    line-height: 1.3 ;
+}
+.airspace-div .airspace-div-txt {
+    padding: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: fit-contents;
+}
+.airspace-div .closing-x-small {
+    font-family: iconfont;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: white;
+    background-color: #9D0300;
+    cursor: pointer;
+    position: absolute;
+    margin: 2px 0px 0px 12px;
+    font-size: 12px;
+    z-index: 10;
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    display: none;
+    opacity: 0.5;
+}
+.airspace-div .closing-x-small::before {
+    content: '\e013';
+}
+.airspace-div:hover .closing-x-small {
+    opacity: 1;
+}
+.airspace-div:hover .airspace-div-txt {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0px 4px 0px 4px;
+}
