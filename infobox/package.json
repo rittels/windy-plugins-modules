@@ -1,6 +1,6 @@
 {
   "name": "windyplugin-module-infobox",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "common module for the infobox lower left screen",
   "main": "dist/infobox.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rittels/windy-plugins/tree/master/_plugins"
+    "url": "https://github.com/rittels/windy-plugins-modules/tree/master/infobox"
   },
   "author": "rittels",
   "license": "MIT"

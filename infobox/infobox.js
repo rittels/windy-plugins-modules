@@ -4,7 +4,7 @@
     [ '$', 'rootScope', 'broadcast','store' ],
     function ( $, rs, bcast, store ) {
 
-    let pluginVersion='0.0.6';
+    let pluginVersion='0.0.7';
 
     /*import bcast from '@windy/broadcast';
     import rs from '@windy/rootScope';
