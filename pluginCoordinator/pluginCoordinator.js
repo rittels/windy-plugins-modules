@@ -1,6 +1,9 @@
 window.mobileMenuPluginButton_ = false;
 window.coordinatorPluginVersion_ = 69;
 
+//check if a previous version of the pluginCoordinator is active,  if found,  disable Listeners and delete module from W.
+//The numeric version number is appended to the module name, thus preventing a Tinyrequire error when the new version is defined.  
+
 window.coordinatorName_= Object.keys(W).find(e=>e.indexOf("windy-plugin-module-pluginCoordinator")>=0);
 if (coordinatorName_  &&  (Number(coordinatorName_.slice(coordinatorName_.lastIndexOf("-")+1))||0) < coordinatorPluginVersion_){
         W[coordinatorName_].disableListeners(W[coordinatorName_]);
