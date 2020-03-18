@@ -1,7 +1,7 @@
 Airspaces module
 ================
 
-Module load openAIP airspaces and displays it in a div that you provide.
+This module loads openAIP airspaces and displays it in a div that you provide.
 
 It returns an object with:
 
@@ -22,7 +22,7 @@ in config.js:
 
 in plugin:
 
-        import xxx as from '@windy/windy-plugin-module-airspaces'
+        import xxx from '@windy/windy-plugin-module-airspaces'
 
 
 
