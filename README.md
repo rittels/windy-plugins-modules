@@ -11,9 +11,10 @@ The modules can be loaded as external dependencies from npm,  by adding them to 
             'https://unpkg.com/windyplugin-module-airspaces@0.0.3/dist/airspaces.js',
             'https://unpkg.com/windyplugin-module-rplanner-wrapper@0.0.99/dist/rplannerWrapper.js'
         ],
-        
+
+(If the version @x.x.x is left out,  the most recent version is loaded,  but the users browser caches the module,  it is thus better to specify the version.  The pluginCoordinator performs version control,  where if a newer version is loaded,  will replace the older version).
       
-Then imported into the plugin:  
+The modules can then be imported into the plugin:  
 
         import pickerT from '@windy/windy-plugin-module-pickerTools';
         import ib from '@windy/windy-plugin-module-infobox';
