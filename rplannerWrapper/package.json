@@ -1,0 +1,16 @@
+{
+  "name": "windyplugin-module-rplanner-wrapper",
+  "version": "0.0.99",
+  "description": "common module for controlling the rplanner",
+  "main": "dist/rplannerWrapper.js",
+  "scripts": {
+    "start": "node ./compiler.js --build --watch --prompt --serve --transpile",
+    "mod":  "node ./compiler.js --prepmodule"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rittels/windy-plugins/tree/master/_plugins"
+  },
+  "author": "rittels",
+  "license": "MIT"
+}
