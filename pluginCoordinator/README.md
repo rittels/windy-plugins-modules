@@ -18,7 +18,7 @@ pluginCoordinator module
 
         dependencies: ['https://unpkg.com/windyplugin-module-plugin-coordinator@x.x.x/dist/pluginCoordinator.js', .....]
 
-- Make sure the version is correct,  if left out, the browser will use the cached version.
+- Make sure the version is correct,  if left out, the browser will use the cached version.  Thanks to @jacobsjo,  version control is added,  so if a newer version is loaded,  will replace the older one.  
 - It is defined and required once loaded,  and does not export anything,  thus does not have to be imported.
 
 
